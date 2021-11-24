@@ -1,0 +1,873 @@
+/*==== Default css ====*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+.container-full{
+	width: 100%;
+}
+
+.container-full:before,
+.container-full:after,
+.container:before,
+.container:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+.col-20{
+	width: 20%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-30{
+	width: 30%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-70{
+	width: 70%;
+	float: right;
+	padding: 0 15px;
+}
+
+.col-33{
+	width: 33.33%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-50{
+	width: 50%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-25{
+	width: 25%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-100{
+	width: 100%;
+	float: left;
+	padding: 0 15px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: 700;
+}
+
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+
+ul{
+	list-style: none;
+}
+
+.section-padding{
+	padding: 100px 0;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+/*==== site css ====*/
+
+/*
+font-family: 'Heebo', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+/*==== 01. top-header css ====*/
+
+.top-header{
+	background: #1d1d1d;
+}
+
+.number{
+	color: #B6B6B6;
+	transition: .3s;
+	font-size: 14px;
+}
+
+.number:hover{
+	color: #ff1a47;
+}
+
+.social{
+	display: inline-block;
+	color: #B6B6B6;
+	list-style: none;
+	margin-left: 30px;
+	font-size: 14px;
+}
+
+.social li{
+	display: inline-block;
+	margin: 0 3px;
+}
+
+.social li a{
+	color: #B6B6B6;
+	transition: .3s;
+	font-size: 14px;
+}
+
+.social li a:hover{
+	color: #ff1a47;
+}
+
+.login-register{
+	float: right;
+	font-size: 14px;
+	text-transform: capitalize;
+	font-size: 14px;
+}
+
+.login-register a{
+	color: #B6B6B6;
+	margin-left: 20px;
+	transition: .3s;
+}
+
+.login-register a:hover{
+	color: #ff1a47;
+}
+
+.login-register i{
+	margin-right: 8px;
+}
+
+/*==== 02. header css ====*/
+
+.header{
+	background: #fff;
+	padding: 20px 0;
+}
+
+.logo img{
+	width: 180px;
+}
+
+.main-menu{
+	list-style: none;
+	float: right;
+	padding-top: 10px;
+}
+
+.main-menu li{
+	display: inline-block;
+}
+
+.main-menu li a{
+	text-transform: capitalize;
+	margin-left: 30px;
+	font-size: 17px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	color: #252525;
+	transition: .3s;
+	border-bottom: 2px solid transparent;
+}
+
+.main-menu li a:hover{
+	border-bottom: 2px solid #ff1a49;
+}
+
+.menu-icon{
+	margin-left: 15px !important;
+	font-size: 20px !important;
+}
+
+.zero{
+	position: relative;
+}
+
+.zero:before{
+	content: "0";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: #FF4369;
+	border-radius: 50%;
+	top: 12px;
+	left: 10px;
+	color: #fff;
+	font-size: 10px;
+	text-align: center;
+	line-height: 15px;
+}
+
+.menu-icon:hover{
+	color: #FF9A93;
+	border-bottom: 2px solid transparent !important;
+}
+
+.active{
+	border-bottom: 2px solid #ff1a49 !important;
+}
+
+/*==== 03. home css ====*/
+
+.home{
+	background: url("../img/home/01.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 100px 0;
+	color: #fff;
+}
+
+.home h1{
+	font-size: 92px;
+	font-weight: 700;
+	position: relative;
+}
+
+.home h1:before{
+	content: "";
+	position: absolute;
+	height: 4px;
+	width: 60px;
+	background: #fff;
+	bottom: 0;
+	left: 0;
+}
+
+.home p{
+	font-size: 19px;
+	line-height: 30px;
+	font-weight: 300;
+	padding: 40px 0;
+}
+
+.btn{
+	font-size: 17px;
+	font-weight: 600;
+	color: #fff;
+	border: 2px solid #fff;
+	text-transform: capitalize;
+	padding: 20px 40px;
+	display: inline-block;
+	transition: .3s;
+	margin-right: 20px;
+}
+
+.btn i{
+	visibility: hidden;
+	transition: .3s;
+	padding: 0 5px;
+}
+
+.btn:hover i{
+	visibility: visible;
+}
+
+.btn-active{
+	background: #FF1A49;
+	border: 2px solid #FF1A49;
+}
+
+/*==== 04. course css ====*/
+
+.courses-box:hover img{
+	transform: scale(1.1);
+}
+
+.course-menu{
+	text-transform: capitalize;
+	margin-bottom: 40px;
+}
+
+.course-menu li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.course-menu li a{
+	font-size: 17px;
+	color: #252525;
+	font-weight: 700;
+}
+
+
+
+.course-menu i{
+	color: #F82853;
+	transition: .3s;
+}
+
+.course-menu li .hide i{
+	visibility: hidden;
+}
+
+.course-menu li .hide:hover i{
+	visibility: visible;
+}
+
+.course-home{
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+}
+
+.course-home img{
+	width: 100%;
+	height: 100%;
+	transition: .5s;
+}
+
+.crs-ctg{
+	position: absolute;
+	bottom: 30px;
+	right: 0;
+	color: #fff;
+	background: #F82853;
+	padding: 15px 40px;
+	font-size: 14px;
+	text-transform: capitalize;
+	transition: .3s;
+}
+
+.crs-ctg:hover{
+	background: #242424;
+}
+
+.course-details{
+	cursor: pointer;
+}
+
+.course-details h3 a{
+	font-size: 20px;
+	color: #252525;
+	transition: .3s;
+	text-transform: capitalize;
+	margin: 25px 0 12px 0;
+	display: inline-block;
+}
+
+.course-details h3 a:hover{
+	color: #F82853;
+}
+
+.instructor{
+	font-size: 15px;
+	text-transform: capitalize;
+	color: #252525;
+	padding-bottom: 30px;
+	display: inline-block;
+	position: relative;
+}
+
+.instructor:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 40px;
+	height: 3px;
+	background: #F82853;
+	transition: .3s;
+}
+
+.instructor:hover:before{
+	width: 55px;
+}
+
+.course-details p{
+	font-size: 15x;
+	color: #444;
+	line-height: 24px;
+	padding-top: 30px;
+}
+
+.course-footer{
+	font-size: 13px;
+	padding-top: 30px;
+}
+
+.course-footer a{
+	color: #252525;
+	text-transform: capitalize;
+}
+
+.course-footer i{
+	padding-right: 4px;
+}
+
+.ratings{
+	margin-left: 20px;
+}
+
+.fee{
+	float: right;
+	font-size: 20px;
+	color: #fd1949 !important;
+	font-weight: 500;
+}
+
+/*==== 05. expart css ====*/
+
+.expart .col-50{
+	padding: 0;
+}
+
+.expart-box{
+	width: 100%;
+	height: 430px;
+	padding: 130px 125px;
+}
+
+.expart-box h3{
+	font-size: 45px;
+
+}
+
+.expart-box a{
+	font-size: 17px;
+	text-transform: capitalize;
+	text-decoration: none;
+
+}
+
+.expart-box-01{
+	background: #FF1A49;
+	color: #fff;
+}
+
+.expart-box-01 a{
+	color: #fff;
+	padding-top: 35px;
+	display: inline-block;
+	position: relative;
+}
+
+.expart-box-01 a:before{
+	content: "";
+	position: absolute;
+	width: 85px;
+	height: 1px;
+	background: #fff;
+	bottom: 0;
+	left: 0;
+}
+
+.expart-box-02{
+	background-image: url("../img/expart/02.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.expart-box-03{
+	background-image: url("../img/expart/03.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.expart-box-04{
+	background-image: url("../img/expart/04.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.expart-box-04 a{
+	color: #252525;
+	padding-top: 35px;
+	display: inline-block;
+	position: relative;
+}
+
+.expart-box-04 a:before{
+	content: "";
+	position: absolute;
+	width: 85px;
+	height: 1px;
+	background: #000;
+	bottom: 0;
+	left: 0;
+}
+
+/*==== 06. teacher css ====*/
+
+.section-title h2{
+	font-size: 45px;
+	color: #252525;
+	padding-bottom: 30px;
+	position: relative;
+}
+
+.section-title h2:before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 35px;
+	height: 3px;
+	background: #fd1949;
+}
+
+.section-title p{
+	font-size: 19px;
+	color: #333;
+	line-height: 29px;
+	padding: 30px 0 80px 0;
+}
+
+.teacher-single{
+	display: flex;
+	margin-bottom: 40px;
+}
+
+.teacher-single-left{
+	width: 140px;
+	height: 140px;
+}
+
+.teacher-single-right{
+	padding: 30px;
+}
+
+.teacher-single-right h3 a{
+	font-size: 20px;
+	color: #252525;
+	text-transform: capitalize;
+	transition: .3s;
+}
+
+.teacher-single-right h3 a:hover{
+	color: #fd1949;
+}
+
+.teacher-single-right span{
+	font-size: 15px;
+	color: #252525;
+	padding: 20px 0;
+	display: inline-block;
+}
+
+.teacher-single-right ul li{
+	display: inline-block;
+	margin-right: 4px;
+}
+
+.teacher-single-right ul li i{
+	font-size: 14px;
+	color: #252525;
+}
+
+.teacher-single-right ul li i:hover{
+	color: #ff1a47;
+}
+
+.teacher.section-padding{
+	padding-bottom: 60px;
+}
+
+/*==== 07. review css ====*/
+
+.review{
+	background: url("../img/review/background.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.review-single{
+	display: flex;
+}
+
+.review-img{
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+}
+
+.review-feedback{
+	color: #fff;
+	padding-left: 30px;
+}
+
+.review-feedback p{
+	font-size: 45px;
+	line-height: 54px;
+	font-weight: bold;
+}
+
+.review-feedback span{
+	font-size: 19px;
+	padding-top: 20px;
+	display: inline-block;
+}
+
+/*==== 08. tour css ====*/
+
+.section-title p{
+	padding-bottom: 40px;
+}
+
+.tour-list{}
+
+.tour-list li{
+	padding-bottom: 20px;
+}
+
+.tour-list li span{
+	font-size: 15px;
+	color: #444;
+	margin-left: 10px;
+}
+
+.tour-list li i{
+	font-size: 15px;
+	color: #ff1a49;
+}
+
+/*==== 08.university-logo css ====*/
+
+.university{
+	background: url("../img/university-logo/background.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 90px 0;
+}
+
+.unvs-box img{
+	display: inline-block;
+}
+
+..unvs-box img:hover{
+	
+}
+
+/*==== 09.form css ====*/
+
+.form{
+	background: url("../img/form-background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.form:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .2;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.form-left{
+	background: #FF1A49;
+	padding: 148px 35px;
+}
+
+.form-left h3{
+	color: #fff;
+	font-size: 45px;
+	margin-left: 50px;
+}
+
+.form-right{
+	background: url("../img/form-right-bg.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 90px 35px;
+	position: relative;
+}
+
+.form-right i{
+	position: absolute;
+	font-size: 60px;
+	color: #fff;
+	top: 48%;
+	left: -15px;
+}
+
+.form-right h4{
+	font-size: 28px;
+	text-transform: capitalize;
+	margin-left: 30px;
+}
+
+.form-right input{
+	width: 90%;
+	padding: 15px;
+	border-style: none;
+	border-bottom: 1px solid rgb(201, 201, 201);
+	margin-top: 15px;
+	margin-left: 30px;
+}
+
+.form-right input[type="submit"]{
+	width: 150px;
+	padding: 20px 0;
+	background: #252525;
+	color: #fff;
+	font-size: 16px;
+	margin-top: 50px;
+	transition: .3s;
+}
+
+.form-right input[type="submit"]:hover{
+	background: #ff1a47;
+}
+
+.form .col-50{
+	padding: 0;
+}
+
+/*==== 10. footer css ====*/
+
+.footer{
+	background: #252525;
+	color: #fff;
+}
+
+.footer-single a{
+	color: #fff;
+	font-size: 15px;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+	transition: .3s;
+}
+
+.footer-single a:hover{
+	color: #ff1a49;
+}
+
+.footer-single p{
+	padding-bottom: 30px;
+}
+
+.footer-about p{
+	line-height: 24px;
+}
+
+.footer-single h4{
+	font-size: 20px;
+	text-transform: capitalize;
+	padding-bottom: 20px;
+}
+
+.footer-about li{
+	margin-top: 5px;
+}
+
+.footer-about i{
+	padding-right: 10px;
+}
+
+.footer-popular a{
+	margin-bottom: 8px;
+}
+
+.footer-popular h5{
+	margin-top: 10px;
+}
+
+.footer-support a{
+	margin-top: 5px;
+}
+
+.footer-copyright{
+	background: #1D1D1D;
+	margin-top: 80px;
+	padding-top: 30px;
+	padding-bottom: 55px;
+}
+
+.footer.section-padding{
+	padding-bottom: 0;
+}
+
+.copyright-left p{
+	font-size: 14px;
+	color: #E1E1E1;
+}
+
+.copyright-left p a{
+	color: #E1E1E1;
+}
+
+.copyright-left p a:hover{
+	color: #ff1a49;
+}
+
+.copyright-right{
+	float: right;
+	font-size: 14px;
+	color: #B6B6B6;
+}
+
+.copyright-right span a{
+	color: #B6B6B6;
+}
+
+.copyright-right ul{
+	display: inline-block;
+	padding-left: 30px;
+}
+
+.copyright-right ul li{
+	display: inline-block;
+	padding-right: 5px;
+}
+
+.copyright-right ul li a{
+	color: #B6B6B6;
+}
+
+.copyright-right ul li a:hover{
+	color: #ff1a49;
+}
+
+
+
+
+
+
+
+
+
+
+
+
